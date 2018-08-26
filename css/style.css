@@ -492,6 +492,7 @@ form .form-control {
 
 .navbar {
   padding: 20px 0 !important;
+  transition: all .5s ease-in-out;
 }
 
 .vesco-top-nav {
@@ -532,4 +533,8 @@ form .form-control {
 
 .navbar-collapse {
   max-height: none !important;
+}
+
+.vesco-top-nav ul.navbar-nav > li.active > a {
+  color: #34c6d3;
 }

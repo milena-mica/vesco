@@ -57,3 +57,16 @@ $(function() {
     autoplayHoverPause: true
   });
 });
+
+
+$(function() {
+  $(window).scroll(function() {
+    if($(this).scrollTop() < 50 ) {
+       // hide nav
+       $("nav").removeClass("vesco-top-nav");
+    } else {
+       // show nav
+       $("nav").addClass("vesco-top-nav");
+    }
+  });
+});
