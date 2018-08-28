@@ -73,9 +73,10 @@ $(function() {
   });
 });
 
-
+// Smooth scrolling
 $(function() {
   $("a.smooth-scroll").click(function(event) {
+
     event.preventDefault();
 
     // get/return id like #about, #work, #team and etc
@@ -84,5 +85,13 @@ $(function() {
     $('html, body').animate({
        scrollTop: $(section).offset().top - 64
     }, 1250, "easeInOutExpo");
+  });
+});
+
+
+// Close mobile menu on click
+$(function() {
+  $(".navbar-collapse ul li a").on("click touch", function() {
+    $(".navbar-toggle").click();
   });
 });
